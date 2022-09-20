@@ -6,7 +6,7 @@
   "prefer-stable": true,
   "require": {
     "php": ">=8.1",
-    "palmyr/CommonUtils": "^2.0"
+    "palmyr/commonutils": "^2.0"
   },
   "require-dev": {
   "symfony/framework-bundle": ">=2.0"
