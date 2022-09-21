@@ -1,0 +1,22 @@
+services:
+
+  Palmyr\CommonUtils\Guzzle\Factory\HandlerStackFactoryInterface:
+    class: Palmyr\CommonUtils\Guzzle\Factory\HandlerStackFactory
+    arguments:
+      - '@logger'
+
+  Palmyr\CommonUtils\Guzzle\Factory\ClientFactoryInterface:
+    class: Palmyr\CommonUtils\Guzzle\Factory\ClientFactory
+    arguments:
+      - '@Palmyr\CommonUtils\Guzzle\Factory\HandlerStackFactoryInterface'
+
+  Palmyr\CommonUtils\IpInfo\Factory\IpInfoServiceFactoryInterface:
+    class: Palmyr\CommonUtils\IpInfo\Factory\IpInfoServiceFactory
+    arguments:
+      - '@Palmyr\CommonUtils\Guzzle\Factory\ClientFactoryInterface'
+
+  Palmyr\CommonUtils\IpInfo\Service\IpInfoServiceInterface:
+    class: Palmyr\CommonUtils\IpInfo\Service\IpInfoService
+    factory:
+      - '@Palmyr\CommonUtils\IpInfo\Factory\IpInfoServiceFactoryInterface'
+      - 'createIpInfoService'
