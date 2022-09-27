@@ -1,4 +1,7 @@
 services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
 
   Palmyr\CommonUtils\Guzzle\Factory\HandlerStackFactoryInterface:
     class: Palmyr\CommonUtils\Guzzle\Factory\HandlerStackFactory
