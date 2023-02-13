@@ -9,7 +9,7 @@
     "palmyr/commonutils": "^2.0"
   },
   "require-dev": {
-    "symfony/framework-bundle": ">=2.0"
+    "symfony/framework-bundle": "^5.0|^6.0"
   },
   "autoload": {
     "psr-4": {
