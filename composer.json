@@ -6,9 +6,7 @@
   "prefer-stable": true,
   "require": {
     "php": ">=8.2",
-    "palmyr/commonutils": "^2.0",
-    "symfony/security-bundle": "^6.2",
-    "symfony/orm-pack": "^2.3"
+    "palmyr/commonutils": "^2.0"
   },
   "require-dev": {
     "symfony/framework-bundle": "^5.0|^6.0"
