@@ -28,3 +28,6 @@ services:
     class: Palmyr\SymfonyCommonUtils\Entity\EventListener\CreatedUpdatedEntityListener
     tags:
       - name: 'doctrine.event_listener'
+        event: 'prePersist'
+      - name: 'doctrine.event_listener'
+        event: 'preUpdate'
