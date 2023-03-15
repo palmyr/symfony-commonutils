@@ -23,3 +23,8 @@ services:
     factory:
       - '@Palmyr\CommonUtils\IpInfo\Factory\IpInfoServiceFactoryInterface'
       - 'createIpInfoService'
+
+  Palmyr\SymfonyCommonUtils\Entity\EventListener\CreatedUpdatedEntityListener:
+    class: Palmyr\SymfonyCommonUtils\Entity\EventListener\CreatedUpdatedEntityListener
+    tags:
+      - name: 'doctrine.event_listener'
