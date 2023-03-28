@@ -7,8 +7,10 @@ use Doctrine\ORM\Mapping as ORM;
 trait CreatedUpdatedEntityTrait
 {
 
+    #[ORM\Column()]
     protected ?\DateTimeImmutable $createdAt;
 
+    #[ORM\Column()]
     protected ?\DateTimeImmutable $updatedAt;
 
     /**
