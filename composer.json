@@ -5,8 +5,8 @@
   "minimum-stability": "stable",
   "prefer-stable": true,
   "require": {
-    "php": ">=8.2",
-    "palmyr/commonutils": "^2.0"
+    "php": ">=8.3",
+    "palmyr/commonutils": "^4.0"
   },
   "require-dev": {
     "symfony/framework-bundle": "^5.0|^6.0"
